@@ -32,12 +32,12 @@ namespace GameProject
 
         public void Delete(Gamer gamer)
         {
-            Console.WriteLine("Kayıt silindi");
+            Console.WriteLine(gamer.FirstName + " isimli oyuncu silindi");
         }
 
         public void Update(Gamer gamer)
         {
-            Console.WriteLine("Kayıt güncellendi");
+            Console.WriteLine(gamer.FirstName + " isimli oyuncu güncellendi");
         }
     }
 }

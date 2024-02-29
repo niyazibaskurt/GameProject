@@ -21,6 +21,10 @@ class Program
         gamer2.IdentityNumber = 43631112360;
 
         gamerManager.Add(gamer1);
+        gamerManager.Update(gamer1);
+        gamerManager.Add(gamer2);
+        gamerManager.Delete(gamer2);
+
 
         Game game1 = new Game();
         game1.GameId = 1;
@@ -33,7 +37,10 @@ class Program
         game2.GamePrice = 500;
 
         GameSalesManager gameSalesManager = new GameSalesManager();
+
+        gameSalesManager.Sale(gamer1, game1);
         gameSalesManager.Sale(gamer2, game2);
+
 
     }
 
